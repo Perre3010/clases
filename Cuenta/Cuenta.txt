@@ -1,0 +1,60 @@
+import {Persona} from './Persona';
+
+export class Cuenta {
+  private titular: Persona;
+  private valorActual: number;
+
+  constructor(titular: Persona, valorActual: number) {
+    this.titular = titular;
+    this.valorActual = valorActual;
+  }
+
+  setTitular(titular: Persona) {
+    this.titular = titular;
+  }
+
+  setValorActual(valor: number) {
+    this.valorActual = valor;
+  }
+
+  getTitular() {
+    return this.titular;
+  }
+
+  getValorActual() {
+    return this.valorActual;
+  }
+
+  mostrar() {
+    console.log('Datos de la cuenta:');
+    console.log('Titular:', this.titular.getNombre());
+    console.log('Edad del titular:', this.titular.getEdad());
+    console.log('Valor actual:', this.valorActual);
+  }
+
+  ingresar(cantidad: number) {
+    if (cantidad < 0) {
+      console.log('No es válido el valor.');
+    } else {
+      this.valorActual += cantidad;
+      console.log('Ingreso exitoso. Nuevo valor actual:', this.valorActual);
+    }
+  }
+
+  retirar(cantidad: number) {
+    const valorInicial = this.valorActual;
+
+    if (cantidad < 0) {
+      console.log('No es válido el valor.');
+    } else if (cantidad > this.valorActual) {
+      console.log('No hay suficiente saldo para realizar el retiro.');
+    } else {
+      this.valorActual -= cantidad;
+      console.log('Retiro exitoso.');
+      console.log('Valor inicial de la cuenta:', valorInicial);
+      console.log('Valor ingresado para retirar:', cantidad);
+      console.log('Valor retirado de la cuenta:', cantidad);
+      console.log('Valor total actual:', this.valorActual);
+    }
+  }
+}

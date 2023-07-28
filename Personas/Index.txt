@@ -1,0 +1,19 @@
+import { Persona} from "./Persona";
+
+let persona1 = new Persona('Juan', 25, '123456789', 'Calle 1', 'Popayán');
+let persona2 = new Persona('María', 32, '987654321', 'Calle 2', 'Popayán');
+let persona3 = new Persona('Pedro', 17, '456789123', 'Calle 3', 'Bogotá');
+let persona4 = new Persona('Laura', 22, '789123456', 'Calle 4', 'Medellín');
+let persona5 = new Persona('Carlos', 19, '321654987', 'Calle 5', 'Cali');
+
+// Mostrar los datos de las personas
+persona1.mostrarDatos();
+persona1.esMayorDeEdad();
+persona2.mostrarDatos();
+persona2.esMayorDeEdad();
+persona3.mostrarDatos();
+persona3.esMayorDeEdad();
+persona4.mostrarDatos();
+persona4.esMayorDeEdad();
+persona5.mostrarDatos();
+persona5.esMayorDeEdad();

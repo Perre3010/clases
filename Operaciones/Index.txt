@@ -1,0 +1,75 @@
+import {Operaciones} from "./Operaciones";
+
+const operacion1 = new Operaciones(10, 5);
+const operacion2 = new Operaciones(20, 7);
+const operacion3 = new Operaciones(8, 4);
+const operacion4 = new Operaciones(15, 3);
+const operacion5 = new Operaciones(30, 2);
+
+console.log("Número 1:", operacion1.getNumero1());
+console.log("Número 2:", operacion1.getNumero2());
+console.log("Suma:", operacion1.sumar());
+console.log("Resta:", operacion1.restar());
+console.log("Multiplicación:", operacion1.multiplicar());
+
+try {
+  console.log("División:", operacion1.dividir());
+} catch (error) {
+  console.error(error.message);
+}
+
+console.log("\n");
+
+console.log("Número 1:", operacion2.getNumero1());
+console.log("Número 2:", operacion2.getNumero2());
+console.log("Suma:", operacion2.sumar());
+console.log("Resta:", operacion2.restar());
+console.log("Multiplicación:", operacion2.multiplicar());
+
+try {
+  console.log("División:", operacion2.dividir());
+} catch (error) {
+  console.error(error.message);
+}
+
+console.log("\n");
+
+console.log("Número 1:", operacion3.getNumero1());
+console.log("Número 2:", operacion3.getNumero2());
+console.log("Suma:", operacion3.sumar());
+console.log("Resta:", operacion3.restar());
+console.log("Multiplicación:", operacion3.multiplicar());
+
+try {
+  console.log("División:", operacion3.dividir());
+} catch (error) {
+  console.error(error.message);
+}
+
+console.log("\n");
+
+console.log("Número 1:", operacion4.getNumero1());
+console.log("Número 2:", operacion4.getNumero2());
+console.log("Suma:", operacion4.sumar());
+console.log("Resta:", operacion4.restar());
+console.log("Multiplicación:", operacion4.multiplicar());
+
+try {
+  console.log("División:", operacion4.dividir());
+} catch (error) {
+  console.error(error.message);
+}
+
+console.log("\n");
+
+console.log("Número 1:", operacion5.getNumero1());
+console.log("Número 2:", operacion5.getNumero2());
+console.log("Suma:", operacion5.sumar());
+console.log("Resta:", operacion5.restar());
+console.log("Multiplicación:", operacion5.multiplicar());
+
+try {
+  console.log("División:", operacion5.dividir());
+} catch (error) {
+  console.error(error.message);
+}

@@ -1,0 +1,45 @@
+export class Operaciones {
+    private numero1: number;
+    private numero2: number;
+  
+    constructor(numero1: number, numero2: number) {
+      this.numero1 = numero1;
+      this.numero2 = numero2;
+    }
+  
+    setNumero1(numero: number) {
+      this.numero1 = numero;
+    }
+  
+    setNumero2(numero: number) {
+      this.numero2 = numero;
+    }
+  
+    getNumero1() {
+      return this.numero1;
+    }
+  
+    getNumero2() {
+      return this.numero2;
+    }
+  
+    sumar(): number {
+      return this.numero1 + this.numero2;
+    }
+  
+    restar(): number {
+      return this.numero1 - this.numero2;
+    }
+  
+    multiplicar(): number {
+      return this.numero1 * this.numero2;
+    }
+  
+    dividir(): number {
+      if (this.numero2 !== 0) {
+        return this.numero1 / this.numero2;
+      } else {
+        throw new Error("No es posible dividir entre cero.");
+      }
+    }
+  }

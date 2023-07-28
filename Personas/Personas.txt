@@ -1,0 +1,74 @@
+export class Persona {
+    private nombre: string;
+    private edad: number;
+    private telefono: string;
+    private direccion: string;
+    private ciudad: string;
+
+    constructor(nombre: string, edad: number, telefono: string, direccion: string, ciudad: string) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+    }
+
+    setNombre(nombre: string) {
+        this.nombre = nombre;
+    }
+
+    setEdad(edad: number) {
+        this.edad = edad;
+    }
+
+    setTelefono(telefono: string) {
+        this.telefono = telefono;
+    }
+
+    setDireccion(direccion: string) {
+        this.direccion = direccion;
+    }
+
+    setCiudad(ciudad: string) {
+        this.ciudad = ciudad;
+    }
+
+    getNombre() {
+        return this.nombre;
+    }
+
+    getEdad() {
+        return this.edad;
+    }
+
+    getTelefono() {
+        return this.telefono;
+    }
+
+    getDireccion() {
+        return this.direccion;
+    }
+
+    getCiudad() {
+        return this.ciudad;
+    }
+
+    mostrarDatos() {
+        console.log(`
+          Nombre: ${this.nombre}
+          Edad: ${this.edad}
+          Teléfono: ${this.telefono}
+          Dirección: ${this.direccion}
+          Ciudad: ${this.ciudad}
+        `);
+      }
+    
+      // Método para determinar si la persona es mayor o menor de edad
+      esMayorDeEdad() {
+        if (this.edad >= 18) {
+            console.log("Es mayor de edad.");
+          } else {
+            console.log("Es menor de edad.");
+      }
+}
+}

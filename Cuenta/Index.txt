@@ -1,0 +1,18 @@
+import {Persona} from './Persona';
+import {Cuenta} from './Cuenta';
+
+const persona1 = new Persona('Juan', 25, '123456789', 'Calle 1', 'Popayán');
+const cuenta1 = new Cuenta(persona1, 1000);
+
+cuenta1.mostrar();
+cuenta1.ingresar(500);
+cuenta1.retirar(200);
+
+console.log("\n");
+
+const persona2 = new Persona('Carlos', 19, '321654987', 'Calle 5', 'Cali');
+const cuenta2 = new Cuenta(persona2, 1500);
+
+cuenta2.mostrar();
+cuenta2.ingresar(100);
+cuenta2.retirar(2000);
